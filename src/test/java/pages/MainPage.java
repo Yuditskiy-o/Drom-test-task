@@ -113,7 +113,7 @@ public class MainPage {
     @Step("Добавить объявление в избранное")
     public MainPage addToFavorites() throws InterruptedException {
         Thread.sleep(3000);
-        carFavoritesList.first().click();
+        carFavoritesList.get(0).click();
         return this;
     }
 
@@ -146,93 +146,93 @@ public class MainPage {
 
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(0));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListOne.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListOne.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(3));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListTwo.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListTwo.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(5));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListThree.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListThree.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListFour.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListFour.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListFive.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListFive.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListSix.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListSix.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListSeven.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListSeven.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListEight.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListEight.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListNine.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListNine.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListTen.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListTen.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListEleven.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListEleven.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListTwelve.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListTwelve.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListThirteen.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListThirteen.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListFourteen.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListFourteen.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListFifteen.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListFifteen.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(8));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListSixteen.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListSixteen.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(4));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListSeventeen.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListSeventeen.add(brandsList.get(i).getText());
         }
 
         executeJavaScript("arguments[0].scrollIntoView(true);", brandsList.get(6));
-        for (SelenideElement selenideElement : brandsList) {
-            carsListEighteen.add(selenideElement.getText());
+        for (int i = 0; i < brandsList.size(); i++) {
+            carsListEighteen.add(brandsList.get(i).getText());
         }
 
         List<String> carsListUndone = Stream.of(carsListOne, carsListTwo, carsListThree, carsListFour, carsListFive,

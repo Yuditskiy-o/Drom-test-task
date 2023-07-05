@@ -1,6 +1,7 @@
 package tests;
 
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.WebDriverRunner;
 import org.junit.jupiter.api.*;
 
 import static helpers.Constants.*;
@@ -47,6 +48,7 @@ public class DromTest extends BaseTest {
     @DisplayName("Проверка корректной сортировки автомобилей из выпадающего списка 'Марка'")
     void shouldShowCarListWithOrder() {
         Selenide.open(URL_25_REGION);
+        WebDriverRunner.getWebDriver().manage().window().maximize();
 
         mainPage.clickFieldBrand()
                 .sortCarsAndShowSpecificAmountInReversedOrder(mainPage.getAllAvailableCarAdvertisements(), 20);
