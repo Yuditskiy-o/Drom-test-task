@@ -23,7 +23,7 @@ abstract public class BaseTest {
         Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;
         Configuration.browserSize = "1440x900";
-        Configuration.headless = false;
+        Configuration.headless = true;
     }
 
     @BeforeAll
@@ -33,8 +33,6 @@ abstract public class BaseTest {
 
     @AfterAll
     public static void tearDown() {
-        Selenide.clearBrowserCookies();
-        Selenide.clearBrowserLocalStorage();
         Selenide.closeWebDriver();
     }
 }
