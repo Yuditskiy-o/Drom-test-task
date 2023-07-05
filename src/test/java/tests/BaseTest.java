@@ -22,7 +22,7 @@ abstract public class BaseTest {
         Configuration.browser = "chrome";
         Configuration.driverManagerEnabled = true;
         Configuration.browserSize = "1440x900";
-        Configuration.headless = true;
+        Configuration.headless = false;
     }
 
     @BeforeAll

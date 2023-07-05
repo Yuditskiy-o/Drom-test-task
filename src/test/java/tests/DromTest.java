@@ -1,17 +1,8 @@
 package tests;
 
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.WebDriverRunner;
 import org.junit.jupiter.api.*;
 
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import static com.codeborne.selenide.Selenide.$$x;
-import static com.codeborne.selenide.Selenide.$x;
-import static com.codeborne.selenide.Selenide.*;
 import static helpers.Constants.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -39,7 +30,7 @@ public class DromTest extends BaseTest {
     @Test
     @Order(2)
     @DisplayName("Авторизация на сайте, добавление объявления в 'Избранное' и последующее удаление")
-    void shouldLoginAndAddToFavorites() {
+    void shouldLoginAndAddToFavorites() throws InterruptedException {
         mainPage.clickButtonLogin();
         loginPage.auth(LOGIN, PASSWORD);
 
@@ -53,7 +44,7 @@ public class DromTest extends BaseTest {
 
     @Test
     @Order(3)
-    @DisplayName("Проверка корректной сортировки автомобилей из выпадающего списка 'Маока'")
+    @DisplayName("Проверка корректной сортировки автомобилей из выпадающего списка 'Марка'")
     void shouldShowCarListWithOrder() {
         Selenide.open(URL_25_REGION);
 
