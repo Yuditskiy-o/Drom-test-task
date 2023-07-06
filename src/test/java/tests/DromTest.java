@@ -2,7 +2,6 @@ package tests;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
-import com.codeborne.selenide.junit5.TextReportExtension;
 import helpers.TestListener;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -79,9 +78,8 @@ public class DromTest extends BaseTest {
         });
 
         step("2. Кликнуть по фильтру 'Марка', затем получить все марки авто с активными объявлениями, отфильтровать " +
-                "в порядке убывания количества объявлений и вывести на экран первые 20 позиций", () -> {
-            mainPage.clickFieldBrand()
-                    .sortCarsAndShowSpecificAmountInReversedOrder(mainPage.getAllAvailableCarAdvertisements(), 20);
-        });
+                "в порядке убывания количества объявлений и вывести на экран первые 20 позиций", () ->
+                mainPage.clickFieldBrand()
+                        .sortCarsAndShowSpecificAmountInReversedOrder(mainPage.getAllAvailableCarAdvertisements(), 20));
     }
 }
